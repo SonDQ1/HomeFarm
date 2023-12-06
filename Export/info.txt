@@ -1,0 +1,7 @@
+- Up date: 24/3/2020
+	+ fix lỗi out app trên android 10
+	+ fix lỗi show quảng cáo full trên android 10
+ thêm thẻ: android:usesCleartextTraffic="true" vào appliaction
+
+	+ fix lỗi ngôn ngữ
+	+ fix lỗi scale màn hình loading, thank
