@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class DialogSetting : MonoBehaviour {
 
     [SerializeField] Slider sldMusic, sldSound;
-
+    
     private void OnEnable()
     {
         sldMusic.onValueChanged.AddListener(delegate { ValuesldMusicChange(); });
@@ -32,4 +32,5 @@ public class DialogSetting : MonoBehaviour {
         GameManagerControll.instance.closeAllDialog();
         GameManagerControll.instance._showDialog(12);
     }
+   
 }

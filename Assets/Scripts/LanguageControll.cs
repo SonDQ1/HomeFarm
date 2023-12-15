@@ -5,8 +5,10 @@ using UnityEngine.UI;
 
 public class LanguageControll : MonoBehaviour
 {
+   
     private void OnEnable()
     {
+        
         string txt = gameObject.GetComponents<Text>()[0].text;
         if (Until.checkLanguage())
             switch (txt)
@@ -28,7 +30,7 @@ public class LanguageControll : MonoBehaviour
                     gameObject.GetComponents<Text>()[0].text = "Không có sản phẩm";
                     break;
                 case "Orders":
-                    gameObject.GetComponents<Text>()[0].text = "Đơn hàng";
+                    gameObject.GetComponents<Text>()[0].text = "Đơn ";
                     break;
                 case "Reward":
                     gameObject.GetComponents<Text>()[0].text = "Phần thưởng";
