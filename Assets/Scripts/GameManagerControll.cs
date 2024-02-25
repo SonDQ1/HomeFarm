@@ -239,6 +239,7 @@ public class GameManagerControll : MonoBehaviour
         arTxtUi[3].text = PlayerPrefsController.instance.getDiamod() + "";
         arTxtUi[4].text = PlayerPrefsController.instance.getExp() + "/" + targetExp[PlayerPrefsController.instance.getLevel()];
         loadFillExp();
+        AdApplovinController.Instance.ShowBanner();
     }
 
     void loadFillExp()

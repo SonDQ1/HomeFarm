@@ -14,6 +14,7 @@ public class SoundController : MonoBehaviour
         else if (instance != this) Destroy(gameObject);
         DontDestroyOnLoad(gameObject);
         _playSoundBird();
+        
     }
     public void _playSound(int index)
     {

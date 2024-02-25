@@ -33,9 +33,10 @@ public class MyAdvertisement : MonoBehaviour
 
     public static void ShowQuangCao()
     {
-        AndroidJavaClass cls_UnityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-        AndroidJavaObject obj_Activity = cls_UnityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
-        obj_Activity.Call("showQuangCao");
+        AdApplovinController.Instance.ShowRewardedAd(null);
+        //AndroidJavaClass cls_UnityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+        //AndroidJavaObject obj_Activity = cls_UnityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
+        //obj_Activity.Call("showQuangCao");
     }
 
     public static string GetNameEmail()

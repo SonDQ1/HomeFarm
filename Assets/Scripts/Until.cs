@@ -60,7 +60,7 @@ public class Until : MonoBehaviour {
     {
         try
         {
-            MyAdvertisement.ShowFullNormal();
+            AdApplovinController.Instance.ShowRewardedAd(null);
         }
         catch { }
     }

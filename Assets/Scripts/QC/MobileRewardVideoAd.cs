@@ -6,38 +6,39 @@
 //public class MobileRewardVideoAd : MonoBehaviour
 //{
 //    public static MobileRewardVideoAd instance;
-//    //ca-app-pub-3940256099942544/5224354917    //video test
-//    //ca-app-pub-8290419972929222/6085913859
-//    string IdRewardedVideoAndroid = "ca-app-pub-8290419972929222/6085913859";
-//    string IdRewardedVideoIOs;
-//    private RewardBasedVideoAd rewardBasedVideoAd;
-//    int MaxWatch = 10;
-//    private int numberWatchDay
-//    {
-//        get
-//        {
-//            if (!PlayerPrefs.HasKey("NumberWatchDay")) { PlayerPrefs.SetInt("NumberWatchDay", MaxWatch); PlayerPrefs.SetInt("DayNow", System.DateTime.Now.Day); }
-//            else if (PlayerPrefs.HasKey("NumberWatchDay")) { if (PlayerPrefs.GetInt("DayNow") != System.DateTime.Now.Day) { PlayerPrefs.SetInt("NumberWatchDay", MaxWatch); PlayerPrefs.SetInt("DayNow", System.DateTime.Now.Day); } }
-//            return PlayerPrefs.GetInt("NumberWatchDay");
-//        }
-//        set { PlayerPrefs.SetInt("NumberWatchDay", value); }
-//    }
-//    [SerializeField] GameObject Question;
-//    [SerializeField] GameObject Congretulate;
-//    [SerializeField] RewardVideo rewardVideo;
-//    void Awake()
-//    {
-//        if (instance == null) instance = this;
-//        else if (instance != this) Destroy(gameObject);
+//    ca-app-pub-3940256099942544/5224354917    //video test
+//   // ca-app-pub-8290419972929222/6085913859
+//   // string IdRewardedVideoAndroid = "ca-app-pub-8290419972929222/6085913859";
+//   // string IdRewardedVideoIOs;
+//   // private RewardBasedVideoAd rewardBasedVideoAd;
+//   // int MaxWatch = 10;
+//   // private int numberWatchDay
+//   // {
+//   //     get
+//   //     {
+//   //         if (!PlayerPrefs.HasKey("NumberWatchDay")) { PlayerPrefs.SetInt("NumberWatchDay", MaxWatch); PlayerPrefs.SetInt("DayNow", System.DateTime.Now.Day); }
+//   //         else if (PlayerPrefs.HasKey("NumberWatchDay")) { if (PlayerPrefs.GetInt("DayNow") != System.DateTime.Now.Day) { PlayerPrefs.SetInt("NumberWatchDay", MaxWatch); PlayerPrefs.SetInt("DayNow", System.DateTime.Now.Day); } }
+//   //         return PlayerPrefs.GetInt("NumberWatchDay");
+//   //     }
+//   //     set { PlayerPrefs.SetInt("NumberWatchDay", value); }
+//   // }
+//   // [SerializeField] GameObject Question;
+//   // [SerializeField] GameObject Congretulate;
+//   // [SerializeField] RewardVideo rewardVideo;
+//   // void Awake()
+//   // {
+//   //     if (instance == null) instance = this;
+//   //     else if (instance != this) Destroy(gameObject);
 
-//        rewardBasedVideoAd = RewardBasedVideoAd.Instance;
-//        if (numberWatchDay > 0) RequestRewardedVideo();
-//    }
-//    // Use this for initialization
-//    void Start()
-//    {
+//   //     rewardBasedVideoAd = RewardBasedVideoAd.Instance;
+//   //     if (numberWatchDay > 0) RequestRewardedVideo();
+//   // }
+//   // Use this for initialization
 
-//    }
+//   //void Start()
+//   // {
+
+//   // }
 
 //    void RequestRewardedVideo()
 //    {
@@ -133,7 +134,7 @@
 //        Congretulate.SetActive(true);
 //        Congretulate.transform.GetChild(0).GetChild(3).GetComponent<Image>().sprite = icon;
 //        Congretulate.transform.GetChild(0).GetChild(3).GetComponent<Image>().SetNativeSize();
-//        Congretulate.transform.GetChild(0).GetChild(3).GetChild(0).GetComponent<Text>().text = cgd+"";
+//        Congretulate.transform.GetChild(0).GetChild(3).GetChild(0).GetComponent<Text>().text = cgd + "";
 //    }
 
 
@@ -151,7 +152,7 @@
 //        if (rewardVideo != null) rewardVideo.OnEnable();
 //    }
 
-//    public void setDialogConguration(int idbtn,Sprite icon, int exp, int gem, int coint, int diamod)
+//    public void setDialogConguration(int idbtn, Sprite icon, int exp, int gem, int coint, int diamod)
 //    {
 //        this.icon = icon;
 //        idBtn = idbtn;
